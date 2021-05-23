@@ -12,5 +12,4 @@ if (inputEl.value === ''){
 }else{
     outputEl.innerHTML = inputEl.value;
 }
-    
 }
