@@ -15,12 +15,12 @@ const ingredients = [
 
 
 const ingreItemsEl = document.querySelector('#ingredients')
-const element = [];
-for (let i = 0; i< ingredients.length; i+=1) {
-    const indexEl = ingredients[i];
-const newItem = document.createElement('li')
-newItem.textContent = indexEl
-element.push(newItem)
-}
+
+
+  const element = ingredients.map( item => {
+  const newItem = document.createElement('li')
+  newItem.textContent = item
+  return newItem
+})
 console.log(element)
 ingreItemsEl.append(...element)
