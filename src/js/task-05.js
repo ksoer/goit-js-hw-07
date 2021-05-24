@@ -7,7 +7,7 @@ const outputEl = document.querySelector('#name-output')
 
 inputEl.addEventListener('input', onChange)
 function onChange () {
-if (inputEl.value === ''){
+if (inputEl.value.trim() === ''){
     outputEl.innerHTML = 'незнакомец'
 }else{
     outputEl.innerHTML = inputEl.value;
